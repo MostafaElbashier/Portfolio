@@ -1,39 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mostafa Elbashier - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mostafa Elbashier — Portfolio</title>
+  <link rel="stylesheet" href="style_v2.css" />
+  <meta name="description" content="Portfolio of Mostafa Elbashier — web developer, problem solver, and lifelong learner." />
 </head>
 <body>
-  <header>
-    <h1>Mostafa Elbashier</h1>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#skills">Skills</a>
-    </nav>
-  </header>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <h1>Mostafa <span>Elbashier</span></h1>
+          <p class="tag">Web Developer &amp; Problem Solver</p>
+        </div>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      Hello! I'm Mostafa Elbashier, and this is my portfolio. I’m passionate about creating
-      clean, modern web experiences and improving my skills every day.
-    </p>
-  </section>
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu</button>
+          <ul class="nav-list" id="navList">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
 
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Problem Solving</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
+        <div class="controls">
+          <button id="themeToggle" title="Toggle light/dark theme">🌗</button>
+        </div>
+      </div>
+    </header>
 
-  <script src="script.js"></script>
+    <main>
+
+      <section id="hero" class="hero container">
+        <div class="hero-left">
+          <h2 class="eyebrow">Hello — I’m</h2>
+          <h1 class="hero-title">Mostafa <span class="accent">Elbashier</span></h1>
+          <p class="hero-sub">I build accessible, high-performance web experiences — clean code, thoughtful design, fast load times.</p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn ghost" href="#contact">Get in Touch</a>
+          </div>
+
+          <ul class="social">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+
+        <div class="hero-right" aria-hidden="false">
+          <div class="card profile-card">
+            <div class="avatar" role="img" aria-label="Mostafa Elbashier avatar">ME</div>
+            <div class="profile-info">
+              <p class="name">Mostafa Elbashier</p>
+              <p class="role">Front-end • JavaScript • UX</p>
+              <p class="location">Based in Cairo, Egypt</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about container">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I’m Mostafa — I enjoy turning problems into elegant, usable experiences on the web.
+              I focus on front-end engineering, accessibility, and writing maintainable code.
+            </p>
+            <p>
+              When I'm not building interfaces I practice competitive programming and explore new
+              frameworks. I believe in continuous learning and open-source collaboration.
+            </p>
+            <a class="btn" href="#contact">Hire / Collaborate</a>
+          </div>
+
+          <aside class="about-stats">
+            <div class="stat">
+              <h3>5+</h3>
+              <p>Years coding</p>
+            </div>
+            <div class="stat">
+              <h3>20+</h3>
+              <p>Projects</p>
+            </div>
+            <div class="stat">
+              <h3>1000+</h3>
+              <p>Problems solved</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="skills" class="skills container">
+        <h2>Skills</h2>
+        <p class="lead">Technologies and tools I work with regularly.</p>
+
+        <div class="skill-grid">
+          <div class="skill-card">
+            <h4>HTML &amp; Semantics</h4>
+            <div class="progress" data-value="95"><span></span></div>
+            <p>Accessible, semantic markup — forms, ARIA, microdata.</p>
+          </div>
+
+          <div class="skill-card">
+            <h4>CSS &amp; Layout</h4>
+            <div class="progress" data-value="90"><span></span></div>
+            <p>Flexbox, Grid, responsive, animations, BEM and utility-first approaches.</p>
+          </div>
+
+          <div class="skill-card">
+            <h4>JavaScript</h4>
+            <div class="progress" data-value="88"><span></span></div>
+            <p>ES6+, DOM, fetch, performance tuning and modular architecture.</p>
+          </div>
+
+          <div class="skill-card">
+            <h4>React</h4>
+            <div class="progress" data-value="80"><span></span></div>
+            <p>Component design, hooks, state management patterns.</p>
+          </div>
+
+          <div class="skill-card">
+            <h4>Testing</h4>
+            <div class="progress" data-value="70"><span></span></div>
+            <p>Unit & integration tests, TDD mindset.</p>
+          </div>
+
+          <div class="skill-card">
+            <h4>Tooling</h4>
+            <div class="progress" data-value="85"><span></span></div>
+            <p>Git, Webpack/Vite, CI/CD, linters and formatters.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects container">
+        <h2>Selected Projects</h2>
+        <p class="lead">A small selection of the work I’m proud of.</p>
+
+        <div class="projects-controls">
+          <input id="projectFilter" placeholder="Filter by tag (e.g. react, ui, tool)" />
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- project items generated from JS -->
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <h2>Contact</h2>
+        <p>If you'd like to work together, send a message — I usually reply within a few days.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required minlength="2" />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" required minlength="10"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send message</button>
+            <button class="btn ghost" type="reset">Reset</button>
+          </div>
+
+          <div id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Mostafa Elbashier — Built with care.</p>
+        <nav class="footer-nav">
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <template id="projectTpl">
+    <article class="project-card">
+      <div class="project-thumb" role="img" aria-label="Project thumbnail"></div>
+      <div class="project-body">
+        <h3 class="project-title"></h3>
+        <p class="project-desc"></p>
+        <div class="project-meta">
+          <span class="tag"></span>
+          <button class="btn small details">Details</button>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalBody"></p>
+    </div>
+  </div>
+
+  <script src="script_v2.js" defer></script>
 </body>
 </html>
