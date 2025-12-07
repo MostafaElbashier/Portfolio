@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #eee;
+}
+
+header {
+  background: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #00aaff;
+}
+
+ul li {
+  margin: 8px 0;
+}
